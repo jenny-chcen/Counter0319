@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity(){
     }
 
     fun Add(v: View){ //View是一個視覺元件，用來判斷是哪一個button
-        if(v.id == R.id.button){ //button
+        //if(v.id == R.id.button){ //button=>java的寫法
+        if(v == button){
             counter++
         }
         else{ //button1
