@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, View.OnLongClick
         })
 
         txv.setOnLongClickListener(this)
+        img.setOnLongClickListener(this)
 
     }
 
@@ -46,7 +47,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, View.OnLongClick
     }
 
     override fun onLongClick(v: View?): Boolean {
-        counter+=2
+        if(v == txv){
+            counter+=2
+        }
+        else{
+            counter--
+        }
+
         txv.text = counter.toString()
         return true //如果是return false長按後還會跑短按的加一
     }
