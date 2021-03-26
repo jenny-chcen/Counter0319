@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, View.OnLongClick
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        txv.text = counter.toString()
+        txv.text = counter.toString() //顯示文字內容
 
         txv.setOnClickListener(this) //報名監控
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, View.OnLongClick
     override fun onLongClick(v: View?): Boolean {
         counter+=2
         txv.text = counter.toString()
-        return true
+        return true //如果是return false長按後還會跑短按的加一
     }
 
 }
