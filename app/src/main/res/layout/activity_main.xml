@@ -41,10 +41,19 @@
         android:text="歸零"
         android:textSize="36sp" />
 
+    <Button
+        android:id="@+id/btnHappy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="樂透"
+        android:textSize="36sp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="TextView" />
+        android:gravity="center"
+        android:text="震動"
+        android:textSize="36sp" />
 
 </LinearLayout>
